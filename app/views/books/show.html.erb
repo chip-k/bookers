@@ -1,0 +1,13 @@
+<div>
+  <%= flash[:notice] %>
+</div>
+
+<h4 class= "show_title">本のタイトル:</h4>
+<p class= "show_body"><%= @book.title %></p>
+<br>
+<h4 class= "show_title">感想:</h4>
+<p class= "show_title"><%= @book.body %></p>
+<br>
+<%= link_to 'Edit', edit_book_path(@book.id) %>
+|
+<%= link_to "Back", "/books" %>
